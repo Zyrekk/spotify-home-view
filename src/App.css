@@ -4,4 +4,21 @@
   font-family: 'Montserrat', sans-serif;
   display: flex;
   min-height: 100vh;
+  flex-direction: column;
+}
+
+.ContentSection{
+  display: flex;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-bottom: 6rem;
+}
+
+.ActionSection{
+  position: fixed;
+  bottom: 0;
+  height: 6rem;
+  width: 100%;
+  background-color: rgb(18,18,18);
+  border-top: 1px solid rgba(117, 116, 116, 0.31);
 }

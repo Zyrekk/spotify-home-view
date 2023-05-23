@@ -1,0 +1,212 @@
+.MainContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.SongContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 22%;
+    gap: .8rem;
+}
+
+.SongContainer img {
+    margin-left: 15px;
+    height: 60%;
+    aspect-ratio: 1/1;
+}
+
+.SongInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+.SongName {
+    margin: 0;
+    font-weight: 600;
+    font-size: .7rem;
+    color: white;
+}
+
+.ArtistName {
+    margin: 0;
+    font-weight: 600;
+    font-size: .7rem;
+    color: #8f8f8f;
+}
+
+.SongHeartIcon {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    font-size: 15px;
+    color: #8f8f8f;
+}
+
+
+.FunctionsContainer {
+    margin-right: 20px;
+    color: #8f8f8f;
+    display: flex;
+    gap:1.3rem;
+    justify-content: flex-end;
+    align-items: center;
+    width: 22%;
+}
+
+.Queue {
+    font-size: 18px;
+    position: relative;
+}
+
+.QueueTriangle {
+    position: absolute;
+    top: -10px;
+    left: -3px;
+}
+
+.SmallTriangle {
+    font-size: 8px;
+    width: 10px;
+    background-color: rgb(18, 18, 18);
+    transition: .3s;
+}
+
+
+.SoundContainer{
+    display: flex;
+    justify-content: center;
+    gap:.5rem;
+    align-items: center;
+    width: 37%;
+
+}
+
+.LineSound {
+    position: relative;
+    width: 90%;
+    height: 4px;
+    background: #5e5e5e;
+    border-radius: 10px;
+}
+
+.LineSound:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 4px;
+    background: #9f9e9e;
+    width: 25%;
+}
+
+
+.Bars{
+    transition: .3s;
+}
+
+.Queue:hover .Bars{
+    color: #ffffff;
+}
+
+.Queue:hover .SmallTriangle{
+    color: #ffffff;
+}
+
+
+.FunctionIcons{
+    transition: .3s;
+}
+
+.FunctionIcons:hover{
+    color: #ffffff;
+}
+
+
+
+.PlayPause {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .7rem;
+    align-items: center;
+    width: 56%;
+}
+
+.CircleIcon {
+    position: relative;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    transition: .1s;
+    backface-visibility: hidden;
+    transform-origin: center;
+}
+
+.PlayIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}
+
+.CircleIcon:hover {
+    transform: scale(1.05);
+}
+
+.faIcons {
+    transition: .2s;
+    color: #b7b6b6;
+}
+
+.faIcons:hover {
+    color: #ffffff;
+
+}
+
+.ActionButtons {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.TimeLine {
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Time {
+    color: #b7b6b6;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.Line {
+    position: relative;
+    width: 70%;
+    height: 4px;
+    background: #5e5e5e;
+    border-radius: 10px;
+}
+
+.Line:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 4px;
+    background: #9f9e9e;
+    width: 14%;
+}
